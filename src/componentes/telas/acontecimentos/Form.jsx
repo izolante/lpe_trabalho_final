@@ -30,10 +30,6 @@ function Form() {
                     <MenuItem value='Furto'>Furto</MenuItem>
                     <MenuItem value='Homicídio'>Homicídio</MenuItem>                     
                 </CampoSelect>
-                <CampoEntrada id="txtID" label="ID"
-                    tipo="text" name="id" value={objeto.id}
-                    onchange={handleChange} requerido={false}
-                    readonly={true} />
                 <CampoEntrada id="txtTitulo" label="Título"
                     tipo="text" name="titulo" value={objeto.titulo}
                     onchange={handleChange} requerido={true}
