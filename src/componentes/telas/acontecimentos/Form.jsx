@@ -19,6 +19,17 @@ function Form() {
                 acaoCadastrar={acaoCadastrar} idform="formulario"
                 maxWidth="sm">
                 <Alerta alerta={alerta} />
+                <CampoSelect
+                    id="selectTipo" label="Tipo"
+                    idLabel="labelTipo"
+                    tipo="text" name="tipo" value={objeto.tipo}
+                    onchange={handleChange} requerido={false}
+                    msgvalido="Tipo OK"
+                    msginvalido="Informe o Tipo">                    
+                    <MenuItem value='Assalto'>Assalto</MenuItem>
+                    <MenuItem value='Furto'>Furto</MenuItem>
+                    <MenuItem value='Homicídio'>Homicídio</MenuItem>                     
+                </CampoSelect>
                 <CampoEntrada id="txtID" label="ID"
                     tipo="text" name="id" value={objeto.id}
                     onchange={handleChange} requerido={false}
@@ -44,17 +55,6 @@ function Form() {
                     readonly={false} maxlength={100}
                     msgvalido="URL OK"
                     msginvalido="Informe a URL" />
-                <CampoSelect
-                    id="selectTipo" label="Tipo"
-                    idLabel="labelTipo"
-                    tipo="text" name="tipo" value={objeto.tipo}
-                    onchange={handleChange} requerido={false}
-                    msgvalido="Tipo OK"
-                    msginvalido="Informe o Tipo">                    
-                    <MenuItem value='Assalto'>Assalto</MenuItem>
-                    <MenuItem value='Furto'>Furto</MenuItem>
-                    <MenuItem value='Homicídio'>Homicídio</MenuItem>                     
-                </CampoSelect>
             </Dialogo>
         </>
     )
