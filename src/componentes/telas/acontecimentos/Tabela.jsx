@@ -22,12 +22,12 @@ function Tabela() {
                 header: 'ID',
             },
             {
-                accessorKey: 'titulo',
-                header: 'Título'
-            },
-            {
                 accessorKey: 'tipo',
                 header: 'Tipo'
+            },
+            {
+                accessorKey: 'titulo',
+                header: 'Título'
             },
             {
                 accessorKey: 'endereco',
@@ -36,10 +36,6 @@ function Tabela() {
             {
                 accessorKey: 'url',
                 header: 'Url'
-            }, 
-            {
-                accessorKey: 'usuario',
-                header: 'Usuário'
             },  
             {
                 accessorKey: 'email',
